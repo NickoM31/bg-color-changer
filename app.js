@@ -32,7 +32,7 @@
 		var gc = $('#green').val();
 		var bc = $('#blue').val();
 		var ac = $('#alpha').val();
-		$('body').css('background-color', "rgb("+rc+","+gc+","+bc+")");
+		
 		$('body').css('background-color', "rgba("+rc+","+gc+","+bc+","+ac+")");
 	},
 
