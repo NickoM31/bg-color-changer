@@ -26,20 +26,17 @@
 		alphaColor : function(){
 			app.rgb();
 		},
-	// 	//Faire une fonction qui additionne les couleurs
-	rgb :function(){
-		var rc = $('#red').val();
-		var gc = $('#green').val();
-		var bc = $('#blue').val();
-		var ac = $('#alpha').val();
-		
-		$('body').css('background-color', "rgba("+rc+","+gc+","+bc+","+ac+")");
-	},
 
-};
+		rgb :function(){
+			var rc = $('#red').val();
+			var gc = $('#green').val();
+			var bc = $('#blue').val();
+			var ac = $('#alpha').val();
+			$('body').css('background-color', "rgba("+rc+","+gc+","+bc+","+ac+")");
+		},
 
-
-$(document).ready(function(){
-	app.init();
-});
+	};
+	$(document).ready(function(){
+		app.init();
+	});
 })();
