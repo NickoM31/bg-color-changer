@@ -9,24 +9,11 @@
 			app.listeners();
 		},
 		listeners:function(){
-			$('#red').on('change input', app.redColor);
-			$('#green').on('change input', app.greenColor);
-			$('#blue').on('change input', app.blueColor);
-			$('#alpha').on('change input', app.alphaColor);
+			$('#red').on('change input', app.rgb);
+			$('#green').on('change input', app.rgb);
+			$('#blue').on('change input', app.rgb);
+			$('#alpha').on('change input', app.rgb);
 		},
-		redColor : function(){
-			app.rgb();
-		},
-		greenColor : function(){
-			app.rgb();
-		},
-		blueColor : function(){
-			app.rgb();
-		},
-		alphaColor : function(){
-			app.rgb();
-		},
-
 		rgb :function(){
 			var rc = $('#red').val();
 			var gc = $('#green').val();
