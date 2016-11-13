@@ -7,22 +7,31 @@
 </head>
 <body>
 	<h1>BG-COLOR-CHANGER</h1>
-	<div>
-		<label for="red"></label>
-		<input id="red" type="range" min="0" max="255" value="0">R
-	</div>
+	
+	<div><span id="showValue">RGB</span></div>
+	<div><span id="hexacolor">HEX</span></div>
+	<form>
+		<div>
+			<label for="red"></label>
+			<input id="red" type="range" min="0" max="255" value="0">R
+			
+		</div>
 
-	<div>
-		<label for="green"></label>
-		<input id="green" type="range" min="0" max="255" value="0">G</div>
+		<div>
+			<label for="green"></label>
+			<input id="green" type="range" min="0"  max="255" value="0">G
+		</div>
 		<div>
 			<label for="blue"></label>
-			<input id="blue" type="range" min="0" max="255" value="0">B</div>
-			<div>
-				<label for="alpha"></label>
-				<input id="alpha" type="range" min="0" max="1" value="0" step="any">A</div>
+			<input id="blue" type="range" min="0" max="255" value="0">B
+		</div>
+		<div>
+			<label for="alpha"></label>
+			<input id="alpha" type="range" min="0" max="1" value="0" step="any">A
+		</div>
+	</form>
 
-				<script src = "node_modules/jquery/dist/jquery.js" ></script>
-				<script type="text/javascript" src = "app.js"></script>
-			</body>
-			</html>
+	<script src = "node_modules/jquery/dist/jquery.js" ></script>
+	<script type="text/javascript" src = "app.js"></script>
+</body>
+</html>

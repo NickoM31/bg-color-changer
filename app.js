@@ -5,8 +5,11 @@
 		gc:null,
 		bc:null,
 		ac:null,
+		
 		init:function(){
 			app.listeners();
+
+			
 		},
 		listeners:function(){
 			$('#red').on('change input', app.rgb);
@@ -19,9 +22,17 @@
 			var gc = $('#green').val();
 			var bc = $('#blue').val();
 			var ac = $('#alpha').val();
-			$('body').css('background-color', "rgba("+rc+","+gc+","+bc+","+ac+")");
+			var colorCode = "rgba("+rc+","+gc+","+bc+","+ac+")";
+			$('body').css('background-color', colorCode);
+			$('#showValue').html(colorCode);
+			// var hex = '#' +Math.random()*colorCode.toString(16).slice(2, 8);
+			// $('#hexacolor').html(hex);
+			
+
+
 		},
 
+		
 	};
 	$(document).ready(function(){
 		app.init();
